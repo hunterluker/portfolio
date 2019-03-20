@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnimatedTyping from './Typing';
 import moon from '../../assets/moon.png';
 import './Home.css';
 
@@ -7,7 +8,11 @@ export default class Home extends Component {
     return (
       <div className="home-section">
         <h1>Hunter Luker</h1>
-        <h4>Full Stack Developer</h4>
+        <div style={{ height: '3vh' }}>
+          <AnimatedTyping />
+        </div>
+
+        <div style={{ marginBottom: '20px', clear: 'both', content: '' }} />
 
         <img src={moon} alt="moon" className="moon" />
 
