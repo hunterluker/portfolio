@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import routes from './routes';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1 style={{ color: '#fff' }}>Portfolio</h1>
-      </div>
+      <Router>
+        <div>{routes}</div>
+      </Router>
     );
   }
 }
