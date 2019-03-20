@@ -25,7 +25,7 @@ class Nav extends Component {
     const { show, hidden } = this.state;
     return (
       <div className="navbar">
-        <a className="navbar-brand" href="/home">
+        <a className="navbar-brand" href="/">
           <h1>H</h1>
           <h2>Hunter</h2>
         </a>
@@ -45,7 +45,7 @@ class Nav extends Component {
               : 'navbar-nav no-show'
           }
         >
-          <NavLink to="/home">
+          <NavLink exact to="/">
             <i className="far fa-moon nav-icon custom-active" />
           </NavLink>
           <NavLink to="/about">
