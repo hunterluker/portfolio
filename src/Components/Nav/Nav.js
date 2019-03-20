@@ -46,19 +46,19 @@ class Nav extends Component {
           }
         >
           <NavLink to="/">
-            <i className="far fa-moon nav-icon" />
+            <i className="far fa-moon nav-icon custom-active" />
           </NavLink>
           <NavLink to="/about">
-            <i className="far fa-user nav-icon" />
+            <i className="far fa-user nav-icon custom-active" />
           </NavLink>
           <NavLink to="/skills">
-            <i className="far fa-file-code nav-icon" />
+            <i className="far fa-file-code nav-icon custom-active" />
           </NavLink>
           <NavLink to="/portfolio">
-            <i className="far fa-eye nav-icon" />
+            <i className="far fa-eye nav-icon custom-active" />
           </NavLink>
           <NavLink to="/contact">
-            <i className="far fa-envelope nav-icon" />
+            <i className="far fa-envelope nav-icon custom-active" />
           </NavLink>
         </div>
       </div>

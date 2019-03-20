@@ -85,6 +85,10 @@
   color: white;
 }
 
+.active .custom-active {
+  color: red;
+}
+
 .hidden {
   display: none;
 }
