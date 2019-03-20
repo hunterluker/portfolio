@@ -7,6 +7,7 @@ export default class Home extends Component {
     return (
       <div className="home-section">
         <h1>Hunter Luker</h1>
+        <h4>Full Stack Developer</h4>
 
         <img src={moon} alt="moon" className="moon" />
 

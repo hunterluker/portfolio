@@ -7,15 +7,10 @@
   color: white;
 }
 
-.home-section h1 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-top: 80px;
-  margin-bottom: 10px;
-}
-
 .moon {
+  animation: spin 50s linear 0s infinite reverse;
   width: 50%;
+  z-index: -1;
   margin-bottom: 15%;
 }
 
@@ -28,4 +23,44 @@
   font-weight: 900;
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.home-section h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.animation-text {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+.footer-icons i {
+  margin: 10px;
+}
+
+.footer-icons a {
+  color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
