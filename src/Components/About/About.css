@@ -1,0 +1,35 @@
+.about-section {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about-section h1 {
+  font-size: 33px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline;
+}
+
+.about-section h1 span {
+  border-bottom: 1px solid rgba(255, 0, 0, 0.777);
+}
+
+.about-section .job-title {
+  font-weight: 900;
+}
+
+.about-section p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-section a {
+  color: white;
+}
