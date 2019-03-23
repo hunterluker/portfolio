@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import AnimatedTyping from './Typing';
 import moon from '../../assets/moon.png';
 import './Home.css';
@@ -17,7 +18,9 @@ export default class Home extends Component {
         <img src={moon} alt="moon" className="moon" />
 
         <div className="home-btn">
-          <button>Make Contact</button>
+          <Link to="/contact">
+            <button>Make Contact</button>
+          </Link>
         </div>
 
         <div className="footer">
