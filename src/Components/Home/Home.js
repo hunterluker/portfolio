@@ -1,12 +1,35 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Loader from '../Loader/Loader';
 import AnimatedTyping from './Typing';
 import moon from '../../assets/moon.png';
 import './Home.css';
 
 export default class Home extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(
+      function() {
+        this.setState({
+          loading: false
+        });
+      }.bind(this),
+      2000
+    );
+  }
+
   render() {
-    return (
+    const { loading } = this.state;
+    return loading ? (
+      <Loader />
+    ) : (
       <div className="home-section">
         <h1>Hunter Luker</h1>
         <div style={{ height: '3vh' }}>

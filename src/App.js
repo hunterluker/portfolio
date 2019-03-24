@@ -6,38 +6,14 @@ import routes from './routes';
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      loading: true
-    };
-  }
-
-  componentDidMount() {
-    setTimeout(
-      function() {
-        this.setState({
-          loading: false
-        });
-      }.bind(this),
-      3100
-    );
-  }
-
   render() {
-    const { loading } = this.state;
     return (
       <Router>
         <div className="App">
-          {loading ? (
-            <Loader />
-          ) : (
-            <React.Fragment>
-              <Nav />
-              {routes}
-            </React.Fragment>
-          )}
+          <React.Fragment>
+            <Nav />
+            {routes}
+          </React.Fragment>
         </div>
         <div id="rotate" />
       </Router>
