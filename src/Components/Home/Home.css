@@ -58,6 +58,16 @@
   color: white;
 }
 
+.home-btn button:hover {
+  background-color: #fd0808;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.home-btn button:active {
+  background-color: #fd0808;
+  color: rgba(0, 0, 0, 0.95);
+}
+
 @keyframes spin {
   0% {
     transform: rotate(360deg);
