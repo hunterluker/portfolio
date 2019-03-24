@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chart from 'react-google-charts';
 import Loader from '../Loader/Loader';
 import './About.css';
 
@@ -21,6 +22,7 @@ class About extends Component {
       2000
     );
   }
+
   render() {
     const { loading } = this.state;
     return loading ? (
@@ -83,17 +85,37 @@ class About extends Component {
               </span>
             </p>
             <br />
-            <div className="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.55345545406!2d-111.70894822530538!3d40.25731378814608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C+UT!5e0!3m2!1sen!2sus!4v1552963364287"
-                width="400"
-                height="300"
-                frameBorder="0"
-                style={{ border: '1px solid red' }}
-                allowFullScreen
-                title="map"
-              />
-            </div>
+            <Chart
+              width={'100%'}
+              height={'200px'}
+              chartType="Timeline"
+              loader={<div>Loading Chart</div>}
+              data={[
+                [
+                  { type: 'string', id: 'Name' },
+                  { type: 'string', id: 'Name' },
+                  { type: 'date', id: 'Start' },
+                  { type: 'date', id: 'End' }
+                ],
+                [
+                  '',
+                  'Web Dev Intern',
+                  new Date(2018, 10, 1),
+                  new Date(2019, 1, 1)
+                ],
+                ['', 'TicketFor2', new Date(2019, 0, 1), new Date()],
+                ['', 'Mentor', new Date(2019, 0, 28), new Date()]
+              ]}
+              options={{
+                timeline: {
+                  showRowLabels: false,
+                  showBarLabels: true,
+                  barLabelStyle: { color: '#fff', fontSize: 10 }
+                },
+                backgroundColor: '#111'
+              }}
+              rootProps={{ 'data-testid': '2' }}
+            />
           </div>
         </React.Fragment>
       </div>

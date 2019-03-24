@@ -1,8 +1,7 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding-top: 45px;
   height: 100vh;
   color: #fff;
   width: 80%;
@@ -103,6 +102,13 @@ input:-webkit-autofill {
 .contact-form button:active {
   background-color: #fd0808;
   color: rgba(0, 0, 0, 0.95);
+}
+
+.map iframe {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  width: 100%;
+  height: 250px;
 }
 
 @keyframes pageScale {
