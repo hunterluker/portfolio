@@ -11,7 +11,7 @@ export default class Contact extends Component {
   };
 
   componentDidMount() {
-    setTimeout(
+    this.timeOut = setTimeout(
       function() {
         this.setState({
           loading: false
@@ -19,6 +19,10 @@ export default class Contact extends Component {
       }.bind(this),
       2000
     );
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOut);
   }
 
   handleChange = e => {

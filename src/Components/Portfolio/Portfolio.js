@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
   }
 
   componentDidMount() {
-    setTimeout(
+    this.timeOut = setTimeout(
       function() {
         this.setState({
           loading: false
@@ -21,6 +21,11 @@ export default class Portfolio extends Component {
       2000
     );
   }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOut);
+  }
+
   render() {
     const { loading } = this.state;
     return loading ? (

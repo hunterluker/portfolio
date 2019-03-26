@@ -13,7 +13,7 @@ class About extends Component {
   }
 
   componentDidMount() {
-    setTimeout(
+    this.timeOut = setTimeout(
       function() {
         this.setState({
           loading: false
@@ -21,6 +21,10 @@ class About extends Component {
       }.bind(this),
       2000
     );
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOut);
   }
 
   render() {
