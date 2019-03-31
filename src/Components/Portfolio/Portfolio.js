@@ -101,7 +101,7 @@ export default class Portfolio extends Component {
             <p>
               Code:{' '}
               <a
-                href="https://github.com/hunterluker/dom_leaks"
+                href="https://github.com/hunterluker/stussy-clone"
                 target="_blank"
                 rel="noopener noreferrer"
               >

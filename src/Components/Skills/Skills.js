@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import StackGrid, { transitions } from 'react-stack-grid';
-import Snack from './Snack';
 import Loader from '../Loader/Loader';
 import './Skills.css';
 
@@ -46,12 +45,11 @@ export default class Skills extends Component {
 
   render() {
     const { scaleUp } = transitions;
-    const { loading, show } = this.state;
+    const { loading } = this.state;
     return loading ? (
       <Loader />
     ) : (
       <React.Fragment>
-        {show ? <Snack /> : null}
         <div className="skills-section">
           <div className="skills-header">
             <h1>

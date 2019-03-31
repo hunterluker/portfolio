@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Chart from 'react-google-charts';
 import Loader from '../Loader/Loader';
+import Snack from './Snack';
 import './About.css';
 
 class About extends Component {
@@ -8,7 +9,8 @@ class About extends Component {
     super();
 
     this.state = {
-      loading: true
+      loading: true,
+      show: false
     };
   }
 
@@ -16,7 +18,8 @@ class About extends Component {
     this.timeOut = setTimeout(
       function() {
         this.setState({
-          loading: false
+          loading: false,
+          show: true
         });
       }.bind(this),
       2000
@@ -28,12 +31,13 @@ class About extends Component {
   }
 
   render() {
-    const { loading } = this.state;
+    const { loading, show } = this.state;
     return loading ? (
       <Loader />
     ) : (
       <div className="about-section">
         <React.Fragment>
+          {show ? <Snack /> : null}
           <div className="about-container">
             <h1>
               <span>About Me:</span>{' '}
