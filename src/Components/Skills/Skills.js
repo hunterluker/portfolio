@@ -45,7 +45,7 @@ export default class Skills extends Component {
   }
 
   render() {
-    const { scaleDown, flip, helix, fadeDown } = transitions;
+    const { scaleUp } = transitions;
     const { loading, show } = this.state;
     return loading ? (
       <Loader />
@@ -68,9 +68,8 @@ export default class Skills extends Component {
               columnWidth={'33.33%'}
               monitorImagesLoaded={true}
               duration={2000}
-              appear={flip.appear}
-              appeared={flip.appeared}
-              enter={scaleDown.enter}
+              appear={scaleUp.appear}
+              appeared={scaleUp.appeared}
               gutterWidth={20}
               gutterHeight={20}
               appearDelay={500}
@@ -123,15 +122,13 @@ export default class Skills extends Component {
 
               <div style={{ textAlign: 'center' }}>
                 <img src={node} alt="nodejs logo" />
-                <span style={{ margin: '0 auto', fontSize: '12px' }}>
-                  Node.js
-                </span>
+                <span style={{ margin: '0 auto', fontSize: '12px' }}>Node</span>
               </div>
 
               <div style={{ textAlign: 'center' }}>
                 <img src={express} alt="expressjs logo" />
                 <span style={{ margin: '0 auto', fontSize: '12px' }}>
-                  Express.js
+                  Express
                 </span>
               </div>
 
