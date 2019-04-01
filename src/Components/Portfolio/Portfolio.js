@@ -96,7 +96,7 @@ export default class Portfolio extends Component {
             <img src={stussy} alt="" />
             <p className="techs">
               React / Redux / HTML5 / CSS3 / NodeJS / Express / Massive /
-              PostgresQL / AWS S3 / Bootstrap / Stripe / NodeMailer / Socket.io
+              PostgresQL / Bootstrap / Stripe
             </p>
             <p>
               Code:{' '}
