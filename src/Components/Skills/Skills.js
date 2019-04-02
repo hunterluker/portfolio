@@ -53,7 +53,9 @@ export default class Skills extends Component {
         <div className="skills-section">
           <div className="skills-header">
             <h1>
-              Skills & <span>Experience:</span>
+              <span className="skills-span">
+                Skills & <span className="exp-span">Experience:</span>
+              </span>
             </h1>
             <p>
               My main area of expertise is Front End Development (client side of
@@ -71,13 +73,7 @@ export default class Skills extends Component {
               gutterWidth={20}
               gutterHeight={20}
               appearDelay={500}
-              style={{
-                width: '100%',
-                height: '40vh',
-                marginTop: '5px',
-                marginBottom: '25px',
-                overflow: 'hidden'
-              }}
+              className="skills-grid"
               itemComponent={'div'}
             >
               <div style={{ textAlign: 'center' }}>
