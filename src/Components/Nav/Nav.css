@@ -58,7 +58,7 @@
 
 .hidden-bar {
   -webkit-transform: translate(-500px);
-  transform: translate(-500px);
+  transform: translate(-2000px);
   backface-visibility: hidden;
 }
 
@@ -133,5 +133,43 @@
   100% {
     opacity: 0%;
     left: 100%;
+  }
+}
+
+.ipad-nav {
+  display: none;
+}
+
+.footer-nav {
+  display: none;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .bar-menu {
+    display: none;
+  }
+
+  .navbar-brand {
+    position: absolute;
+  }
+
+  .ipad-nav {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    font-size: 26px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    justify-content: center;
+    align-items: center;
   }
 }

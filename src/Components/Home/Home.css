@@ -8,6 +8,12 @@
   animation: pageScale 0.8s;
 }
 
+.spacer {
+  margin-bottom: 20px;
+  clear: both;
+  content: '';
+}
+
 .moon {
   animation: spin 50s linear 0s infinite reverse;
   width: 50%;
@@ -83,5 +89,48 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .home-section {
+    flex-direction: row;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .home-section h1 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+  }
+
+  .home-btn {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+  }
+
+  .home-animation {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    overflow: hidden;
+    display: inline !important;
+  }
+
+  .home-section .footer {
+    display: none;
+  }
+
+  .moon {
+    width: 50%;
+    z-index: -5;
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    margin-bottom: 0;
   }
 }

@@ -36,11 +36,11 @@ export default class Home extends Component {
     ) : (
       <div className="home-section">
         <h1>Hunter Luker</h1>
-        <div style={{ height: '3vh' }}>
+        <div className="home-animation" style={{ height: '3vh' }}>
           <AnimatedTyping />
         </div>
 
-        <div style={{ marginBottom: '20px', clear: 'both', content: '' }} />
+        <div className="spacer" />
 
         <img src={moon} alt="moon" className="moon" />
 
