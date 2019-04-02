@@ -60,3 +60,18 @@
 .about-section text {
   fill: #fff !important;
 }
+
+@media only screen and (min-device-width: 768px) {
+  .about-section {
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+  }
+
+  .about-section h1 {
+    font-size: 45px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+}
