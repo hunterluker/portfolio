@@ -62,32 +62,33 @@ export default class Skills extends Component {
               My main area of expertise is Front End Development (client side of
               the web).
             </p>
+            <div className="skills-desktop">
+              <p>
+                Focusing mostly on HTML, CSS, and JavaScript I have a strong
+                aesthetic for design and building intuitive and easy to use user
+                interfaces.
+              </p>
 
-            <p>
-              Focusing mostly on HTML, CSS, and JavaScript I have a strong
-              aesthetic for design and building intuitive and easy to use user
-              interfaces.
-            </p>
+              <p>
+                I also have full-stack developer experience with backend support
+                with Node.js and PostgreSQL.
+              </p>
 
-            <p>
-              I also have full-stack developer experience with backend support
-              with Node.js and PostgreSQL.
-            </p>
-
-            <p>
-              Vist my{' '}
-              <a
-                href="https://www.linkedin.com/in/hunterluker/"
-                style={{ color: '#fd0808' }}
-              >
-                LinkedIn
-              </a>{' '}
-              profile for more details or just{' '}
-              <Link to="contact" style={{ color: '#fd0808' }}>
-                contact
-              </Link>{' '}
-              me.
-            </p>
+              <p>
+                Vist my{' '}
+                <a
+                  href="https://www.linkedin.com/in/hunterluker/"
+                  style={{ color: '#fd0808' }}
+                >
+                  LinkedIn
+                </a>{' '}
+                profile for more details or just{' '}
+                <Link to="contact" style={{ color: '#fd0808' }}>
+                  contact
+                </Link>{' '}
+                me.
+              </p>
+            </div>
           </div>
 
           <div className="skills-container">
