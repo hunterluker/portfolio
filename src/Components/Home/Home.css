@@ -152,7 +152,7 @@
     left: 100px;
     display: flex;
     justify-content: center;
-    height: calc(120vh - 30%);
+    height: calc(120vh - 40%);
     margin-top: -140px;
     overflow: hidden;
   }
