@@ -43,40 +43,42 @@ export default class Contact extends Component {
     ) : (
       <div className="contact-section">
         <React.Fragment>
-          <h1>
-            <span>Contact:</span>
-          </h1>
+          <div className="form-div">
+            <h1>
+              <span>Contact:</span>
+            </h1>
 
-          <p>
-            If you have any questions, please don't hesitate to contact me using
-            the from below...
-          </p>
+            <p>
+              If you have any questions, please don't hesitate to contact me
+              using the from below...
+            </p>
 
-          <form className="contact-form" onSubmit={this.formSubmit}>
-            <input
-              id="name"
-              placeholder="Name"
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.name}
-            />
-            <input
-              id="email"
-              placeholder="Email"
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.email}
-              required
-            />
-            <textarea
-              id="message"
-              placeholder="Message"
-              onChange={this.handleChange}
-              value={this.state.message}
-              required
-            />
-            <button>Send</button>
-          </form>
+            <form className="contact-form" onSubmit={this.formSubmit}>
+              <input
+                id="name"
+                placeholder="Name"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.name}
+              />
+              <input
+                id="email"
+                placeholder="Email"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.email}
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="Message"
+                onChange={this.handleChange}
+                value={this.state.message}
+                required
+              />
+              <button>Send</button>
+            </form>
+          </div>
         </React.Fragment>
         <div className="map">
           <iframe

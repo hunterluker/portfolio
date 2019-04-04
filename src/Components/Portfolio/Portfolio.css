@@ -89,15 +89,16 @@
 
 @media only screen and (min-device-width: 768px) {
   .portfolio-section h1 {
-    font-size: 45px;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
 
   .projects-container h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .projects-container h2 a {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(216, 216, 216);
   }
 
@@ -105,10 +106,46 @@
   .projects-container a,
   .projects-container .techs {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .project {
     margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio-section {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    animation: pageScale 0.8s;
+  }
+
+  .portfolio-section i {
+    display: none;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .project {
+    width: 45%;
+    margin-bottom: 110px;
+    padding-right: 35px;
+  }
+
+  .projects-container .techs {
+    width: 95%;
+    text-align: left;
   }
 }

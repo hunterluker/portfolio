@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+.chart-section {
+  margin-top: 40px;
+  overflow: hidden;
+}
+
 .about-container {
   animation: pageScale 0.8s;
   line-height: 1.6;
@@ -61,17 +66,88 @@
   fill: #fff !important;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .about-section {
     padding-top: 80px;
     height: calc(100vh - 80px);
   }
 
   .about-section h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .about-section p {
     font-size: 15px;
+  }
+
+  .chart-section {
+    margin-top: 40px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-section {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    color: #fff;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-section h1 {
+    font-size: 40px;
+    width: 80%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block;
+  }
+
+  .about-section p {
+    font-size: 14px;
+  }
+
+  .aboutme-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .experience-section h1 {
+    font-size: 40px;
+    height: 50px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .about-section p:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .experience-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .experience-section div {
+    width: 48%;
+    padding-right: 20px;
+  }
+
+  .chart-section {
+    margin-top: 40px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StackGrid, { transitions } from 'react-stack-grid';
+import { Link } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 import './Skills.css';
 
@@ -60,6 +61,32 @@ export default class Skills extends Component {
             <p>
               My main area of expertise is Front End Development (client side of
               the web).
+            </p>
+
+            <p>
+              Focusing mostly on HTML, CSS, and JavaScript I have a strong
+              aesthetic for design and building intuitive and easy to use user
+              interfaces.
+            </p>
+
+            <p>
+              I also have full-stack developer experience with backend support
+              with Node.js and PostgreSQL.
+            </p>
+
+            <p>
+              Vist my{' '}
+              <a
+                href="https://www.linkedin.com/in/hunterluker/"
+                style={{ color: '#fd0808' }}
+              >
+                LinkedIn
+              </a>{' '}
+              profile for more details or just{' '}
+              <Link to="contact" style={{ color: '#fd0808' }}>
+                contact
+              </Link>{' '}
+              me.
             </p>
           </div>
 
@@ -127,6 +154,13 @@ export default class Skills extends Component {
               </div>
 
               <div style={{ textAlign: 'center' }}>
+                <img src={sql} alt="postgresql logo" />
+                <span style={{ margin: '0 auto', fontSize: '12px' }}>
+                  PostgreSQL
+                </span>
+              </div>
+
+              <div style={{ textAlign: 'center' }}>
                 <img src={auth} alt="auth0 logo" />
                 <span style={{ margin: '0 auto', fontSize: '12px' }}>
                   Auth0
@@ -136,13 +170,6 @@ export default class Skills extends Component {
               <div style={{ textAlign: 'center' }}>
                 <img src={jest} alt="jest logo" />
                 <span style={{ margin: '0 auto', fontSize: '12px' }}>Jest</span>
-              </div>
-
-              <div style={{ textAlign: 'center' }}>
-                <img src={sql} alt="postgresql logo" />
-                <span style={{ margin: '0 auto', fontSize: '12px' }}>
-                  PostgreSQL
-                </span>
               </div>
 
               <div style={{ textAlign: 'center' }}>
