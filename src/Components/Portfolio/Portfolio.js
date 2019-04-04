@@ -22,7 +22,7 @@ export default class Portfolio extends Component {
           loading: false
         });
       }.bind(this),
-      2000
+      1500
     );
   }
 

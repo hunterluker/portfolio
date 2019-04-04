@@ -6,7 +6,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  animation: loaderSlideIn 1s;
+  animation: loaderSlideIn 0.5s;
 }
 
 .loader-header {
@@ -34,9 +34,9 @@
   height: 0.6vh;
   border-radius: 10px;
   position: relative;
-  animation: slideLeft 1.5s;
+  animation: slideLeft 1.3s;
   background: #fd0808;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   width: 0;
 }
 

@@ -21,7 +21,7 @@ export default class Home extends Component {
           loading: false
         });
       }.bind(this),
-      2000
+      1500
     );
   }
 

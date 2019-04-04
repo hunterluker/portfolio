@@ -17,7 +17,7 @@ export default class Contact extends Component {
           loading: false
         });
       }.bind(this),
-      2000
+      1500
     );
   }
 

@@ -36,7 +36,7 @@ export default class Skills extends Component {
           show: true
         });
       }.bind(this),
-      2000
+      1500
     );
   }
 

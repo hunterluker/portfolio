@@ -149,5 +149,7 @@
 
   .chart-section {
     margin-top: 40px;
+    /* min-height: 28vh; */
+    height: 28vh;
   }
 }
