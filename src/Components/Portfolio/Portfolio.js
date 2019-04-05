@@ -81,7 +81,7 @@ export default class Portfolio extends Component {
             <h2>
               Stussy Clone:{' '}
               <a
-                href="https://domleaks.com"
+                href="http://165.227.24.211:3006/#/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
