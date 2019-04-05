@@ -89,9 +89,10 @@ export default class Portfolio extends Component {
               </a>
             </h2>
             <p>
-              Designed, created and hosted a fully functional, mobile responsive
-              website that allows users to share secrets and tips for web
-              development.
+              An ecommerce clone of{' '}
+              <a href="https://www.stussy.com/">www.stussy.com</a> that is fully
+              responsive. Implemented redux-persist to persist the users cart to
+              local storage.
             </p>
             <img src={stussy} alt="" />
             <p className="techs">

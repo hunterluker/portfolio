@@ -65,7 +65,7 @@ export default class Skills extends Component {
             <div className="skills-desktop">
               <p>
                 Focusing mostly on HTML, CSS, and JavaScript I have a strong
-                aesthetic for design and building intuitive and easy to use user
+                aesthetic for design and building intuitive and easy to use
                 interfaces.
               </p>
 
