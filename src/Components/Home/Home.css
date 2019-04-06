@@ -209,3 +209,28 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1281px) {
+  .home-section {
+    flex-direction: row;
+    position: relative;
+    top: 20%;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+    height: calc(120vh - 40%);
+    margin: 0 auto;
+    margin-top: -80px;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .moon {
+    width: 30%;
+    z-index: -1;
+    position: absolute;
+    top: 130px;
+    right: 25%;
+    margin-bottom: 0;
+  }
+}

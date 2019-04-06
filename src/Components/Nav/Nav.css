@@ -215,3 +215,28 @@
     color: #777;
   }
 }
+
+@media (min-width: 1281px) {
+  .ipad-nav {
+    display: flex;
+    width: 50%;
+    height: 62%;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footer-nav i {
+    font-size: 18px;
+    color: #777;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    position: relative;
+    left: 11px;
+    top: -30px;
+  }
+}

@@ -45,9 +45,10 @@ class About extends Component {
               </h1>
               <p>
                 I'm a trained full-stack web developer with a focus on React,
-                NodeJS, and PostgreSQL. Outside of development I have many other
-                interest: magic, astronomy, and soccer to name a few. I am
-                currently living in Provo, Utah.
+                Node.js, and PostgreSQL. My passion for web development,
+                learning and staying up to date with the hottest technologies
+                and trends is what always keeps me going. I am currently living
+                in Provo, Utah.
               </p>
             </div>
             <h1>

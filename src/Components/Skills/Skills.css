@@ -170,3 +170,23 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1281px) {
+  .skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh;
+    color: white;
+    width: 70%;
+  }
+
+  .skills-header {
+    width: 40%;
+  }
+
+  .skills-container {
+    width: 40%;
+    margin-top: 0px;
+  }
+}

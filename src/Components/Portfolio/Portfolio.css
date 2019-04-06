@@ -150,3 +150,17 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1281px) {
+  .portfolio-section {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 0px);
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    animation: pageScale 0.8s;
+  }
+}
