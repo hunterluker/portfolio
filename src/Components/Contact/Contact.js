@@ -50,7 +50,7 @@ export default class Contact extends Component {
 
             <p>
               If you have any questions, please don't hesitate to contact me
-              using the from below...
+              using the form below...
             </p>
 
             <form className="contact-form" onSubmit={this.formSubmit}>
