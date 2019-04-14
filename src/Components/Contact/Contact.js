@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import Loader from '../Loader/Loader';
+import axios from 'axios';
 
 export default class Contact extends Component {
   state = {
@@ -31,9 +32,13 @@ export default class Contact extends Component {
     });
   };
 
-  formSubmit = e => {
-    console.log('Submitted');
+  formSubmit = async e => {
     e.preventDefault();
+    const { message, name, email } = this.state;
+
+    await axios.post('/api/send', { message, name, email });
+
+    this.props.history.push('/');
   };
 
   render() {
