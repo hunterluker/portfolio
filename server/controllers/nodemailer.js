@@ -1,4 +1,4 @@
-const { CREDS_EMAIL, CREDS_PASS, SUCCESS } = process.env;
+const { CREDS_EMAIL, CREDS_PASS } = process.env;
 const nodemailer = require('nodemailer');
 
 module.exports = {
@@ -13,8 +13,6 @@ module.exports = {
       }
     });
 
-    console.log(req.body);
-
     let mailOptions = {
       from: req.body.email, // sender address
       to: 'hunterluker1992@gmail.com', // list of receivers
@@ -26,7 +24,7 @@ module.exports = {
       if (error) {
         return console.log(error);
       }
-      res.redirect(SUCCESS);
+      res.sendStatus(200);
     });
   }
 };

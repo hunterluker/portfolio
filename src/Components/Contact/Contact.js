@@ -38,7 +38,12 @@ export default class Contact extends Component {
 
     await axios.post('/api/send', { message, name, email });
 
-    this.props.history.push('/');
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    });
+    this.props.history.push('/success');
   };
 
   render() {

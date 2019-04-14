@@ -7,9 +7,11 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Skills from './Components/Skills/Skills';
+import Success from './Components/Success/Success';
 
 export default (
   <Switch>
+    <Route path="/success" component={Success} />
     <Route path="/skills" component={Skills} />
     <Route path="/portfolio" component={Portfolio} />
     <Route path="/contact" component={Contact} />
