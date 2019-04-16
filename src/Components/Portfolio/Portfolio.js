@@ -59,8 +59,8 @@ export default class Portfolio extends Component {
             </p>
             <img src={dom} alt="" />
             <p className="techs">
-              React / Redux / HTML5 / CSS3 / NodeJS / Express / Massive /
-              PostgresQL / AWS S3 / Bootstrap / Stripe / NodeMailer / Socket.io
+              React / HTML5 / CSS3 / NodeJS / Express / Massive / PostgreSQL /
+              AWS S3 / Auth0 / Stripe / NodeMailer / Socket.io
             </p>
             <p>
               Code:{' '}
@@ -91,13 +91,13 @@ export default class Portfolio extends Component {
             <p>
               An ecommerce clone of{' '}
               <a href="https://www.stussy.com/">www.stussy.com</a> that is fully
-              responsive. Implemented redux-persist to persist the users cart to
+              responsive. Implemented redux-persist to save the users cart to
               local storage.
             </p>
             <img src={stussy} alt="" />
             <p className="techs">
               React / Redux / HTML5 / CSS3 / NodeJS / Express / Massive /
-              PostgresQL / Bootstrap / Stripe
+              PostgreSQL / Bootstrap / Stripe
             </p>
             <p>
               Code:{' '}
