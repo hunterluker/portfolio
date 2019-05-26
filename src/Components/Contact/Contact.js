@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import Loader from '../Loader/Loader';
+import Spinner from 'react-spinkit';
 import axios from 'axios';
 
 export default class Contact extends Component {
@@ -8,7 +9,8 @@ export default class Contact extends Component {
     name: '',
     email: '',
     message: '',
-    loading: true
+    loading: true,
+    spinner: false
   };
 
   componentDidMount() {
@@ -33,6 +35,9 @@ export default class Contact extends Component {
   };
 
   formSubmit = async e => {
+    this.setState({
+      spinner: true
+    });
     e.preventDefault();
     const { message, name, email } = this.state;
 
@@ -41,13 +46,14 @@ export default class Contact extends Component {
     this.setState({
       name: '',
       email: '',
-      message: ''
+      message: '',
+      spinner: false
     });
     this.props.history.push('/success');
   };
 
   render() {
-    const { loading } = this.state;
+    const { loading, spinner } = this.state;
     return loading ? (
       <Loader />
     ) : (
@@ -86,7 +92,9 @@ export default class Contact extends Component {
                 value={this.state.message}
                 required
               />
-              <button>Send</button>
+              <button>
+                {spinner ? <Spinner name="circle" color="red" /> : 'Send'}
+              </button>
             </form>
           </div>
         </React.Fragment>

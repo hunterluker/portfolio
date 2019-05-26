@@ -92,16 +92,13 @@ input:-webkit-autofill {
   float: right;
   text-align: center;
   margin-right: 0px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form button:hover {
-  background-color: #fd0808;
-  color: rgba(0, 0, 0, 0.95);
-}
-
-.contact-form button:active {
-  background-color: #fd0808;
-  color: rgba(0, 0, 0, 0.95);
+  cursor: pointer;
 }
 
 .map iframe {
@@ -109,6 +106,11 @@ input:-webkit-autofill {
   margin-top: 50px;
   width: 100%;
   height: 250px;
+}
+
+.sk-spinner {
+  width: 30px !important;
+  height: 15px !important;
 }
 
 @keyframes pageScale {
@@ -137,10 +139,15 @@ input:-webkit-autofill {
 
   .contact-form button {
     margin-top: 10px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .contact-form button {
-    margin-top: 10px;
+  .sk-spinner {
+    width: 30px !important;
+    height: 15px !important;
   }
 
   .contact-form button:hover {
