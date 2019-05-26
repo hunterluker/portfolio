@@ -139,6 +139,14 @@ input:-webkit-autofill {
     margin-top: 10px;
   }
 
+  .contact-form button {
+    margin-top: 10px;
+  }
+
+  .contact-form button:hover {
+    cursor: pointer;
+  }
+
   .map iframe {
     margin-bottom: 20px;
     margin-top: 50px;
