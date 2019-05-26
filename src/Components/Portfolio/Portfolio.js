@@ -5,6 +5,7 @@ import './Portfolio.css';
 import dom from '../../assets/dom-web-mobile.PNG';
 import stussy from '../../assets/stussy-web-mobile.PNG';
 import omni from '../../assets/omni-web-mobile.PNG';
+import ils from '../../assets/ils-33.PNG';
 
 export default class Portfolio extends Component {
   constructor() {
@@ -126,11 +127,42 @@ export default class Portfolio extends Component {
             </h2>
             <p>A mock, one-page business site that is fully responsive.</p>
             <img src={omni} alt="" />
-            <p className="techs">HTML | CSS | JavaScript | jQuery</p>
+            <p className="techs">HTML / CSS / JavaScript / jQuery</p>
             <p>
               Code:{' '}
               <a
                 href="https://github.com/hunterluker/omnifood"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </p>
+          </div>
+          <div className="project">
+            <h2>
+              ILS-33:{' '}
+              <a
+                href="https://www.npmjs.com/package/ils-33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.npmjs.com/package/ils-33
+              </a>
+            </h2>
+            <p>
+              A published npm package that is a command line interface tool that
+              scrapes internal links of a webpage.
+            </p>
+            <img src={ils} alt="" />
+            <p className="techs">
+              JavaScript / Packages: cheerio / request / commander / inquirer /
+              chalk / ora / figlet{' '}
+            </p>
+            <p>
+              Code:{' '}
+              <a
+                href="https://github.com/hunterluker/ils-33"
                 target="_blank"
                 rel="noopener noreferrer"
               >
