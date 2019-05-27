@@ -6,6 +6,7 @@ import dom from '../../assets/dom-web-mobile.PNG';
 import stussy from '../../assets/stussy-web-mobile.PNG';
 import omni from '../../assets/omni-web-mobile.PNG';
 import ils from '../../assets/ils-33.PNG';
+import bitcoin from '../../assets/bitcoin.PNG';
 
 export default class Portfolio extends Component {
   constructor() {
@@ -154,7 +155,7 @@ export default class Portfolio extends Component {
               A published npm package that is a command line interface tool that
               scrapes internal links of a webpage.
             </p>
-            <img src={ils} alt="" />
+            <img src={ils} alt="ils-33" />
             <p className="techs">
               JavaScript / Packages: cheerio / request / commander / inquirer /
               chalk / ora / figlet{' '}
@@ -163,6 +164,34 @@ export default class Portfolio extends Component {
               Code:{' '}
               <a
                 href="https://github.com/hunterluker/ils-33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </p>
+          </div>
+          <div className="project">
+            <h2>
+              Bitcoin Price Tracker:{' '}
+              <a
+                href="https://bitcoin-vx-price-chart-q9zzwrd0v.now.sh/bitcoin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                now.sh/bitcoin
+              </a>
+            </h2>
+            <p>
+              This was a project I built from a code along tutorial to learn d3
+              with React.
+            </p>
+            <img src={bitcoin} alt="bitcoin" style={{ margin: '5px 10px' }} />
+            <p className="techs">JavaScript / React / NextJS / D3 / VX </p>
+            <p>
+              Code:{' '}
+              <a
+                href="https://github.com/hunterluker/bitcoin-vx-price-chart"
                 target="_blank"
                 rel="noopener noreferrer"
               >
