@@ -139,6 +139,9 @@ export default class Portfolio extends Component {
                 Github
               </a>
             </p>
+            <p className="chevron-icon">
+              <i className="fas fa-chevron-down" />
+            </p>
           </div>
           <div className="project">
             <h2>
@@ -169,6 +172,9 @@ export default class Portfolio extends Component {
               >
                 Github
               </a>
+            </p>
+            <p className="chevron-icon">
+              <i className="fas fa-chevron-down" />
             </p>
           </div>
           <div className="project">
